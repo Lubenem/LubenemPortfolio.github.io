@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(8, 11, 24);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  width: 100%;
+  font-size: 50px;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.nav_bar {
+  position: fixed;
+  padding: 30px 100px;
+  background-color: #24252a;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 0px 20px;
+    transition: color 0.3s ease 0s;
+  }
+
+  a:hover {
+    color: #0088a9;
+  }
+
+  .portfolio {
+    margin-right: auto;
+  }
+}
+
+#head1 {
+  height: 600px;
+  padding-top: 100px;
+  background-color: yellow;
+
+  img {
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 40%;
+  }
+}
+
+#projects {
+  height: 750px;
+  padding-top: 50px;
+  background-color: green;
+
+  .project_items {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      flex: 1;
+      text-align: center;
+      color: #010708;
+      font-size: 20px;
+      padding: 20px 80px;
+
+      img {
+        width: 200px;
+        border-radius: 10%;
+      }
+    }
+  }
+}
+
+#about {
+  height: 750px;
+  padding-top: 50px;
+  background-color: purple;
+
+  .aboutText {
+    margin-left: 20%;
+
+    p {
+      width: 100%;
+      font-size: 30px;
+      color: #010708;
+      text-align: left;
+    }
+
+    p span {
+      font-size: 32px;
+      color: #ccecf1;
+    }
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

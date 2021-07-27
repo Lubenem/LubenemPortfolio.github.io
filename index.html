@@ -9,35 +9,34 @@
 </head>
 <body>
 
-    <div class = "navBar">
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
+    <div class = "nav_bar">
+        <a class= "portfolio" href="#head1">Portfolio</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </div>
 
-    <div class="head1">
+    <div id="head1">
         <img src="images/avatar.jpg"/>
         <p>Liubomyr Chahoub</p>
         <p>.Net developer / Game developer</p>
     </div>
 
-    <div class="projects">
+    <div id="projects">
         <p>Projects</p>
-
-        <ul>
-            <li><img src="images/avatar.jpg"> project1</li>
-            <li><img src="images/avatar.jpg"> project2 </li>
-            <li><img src="images/avatar.jpg"> project3 </li>
-        </ul>
-
-        <ul>
-            <li><img src="images/avatar.jpg"> project1</li>
-            <li><img src="images/avatar.jpg"> project2 </li>
-            <li><img src="images/avatar.jpg"> project3 </li>
-        </ul>
+        
+        <div class="project_items"> 
+            <p><img src="images/avatar.jpg"> project1</p>
+            <p><img src="images/avatar.jpg"> project2</p>
+            <p><img src="images/avatar.jpg"> project3</p>
+            <p><img src="images/avatar.jpg"> project4</p>
+            <p><img src="images/avatar.jpg"> project5</p>
+            <p><img src="images/avatar.jpg"> project6</p>
+        </div>
+        
     </div>
 
-    <div class="about">
+    <div id="about">
         <p>About</p>
         <div class="aboutText">
             <p> <span>github:</span> https://github.com/Lubenem</p>
@@ -53,28 +52,30 @@
         </div>
     </div>
 
-     <div class="container">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div> 
+    <div id="contact">
+        <div class="container">
+            <form action="action_page.php">
+        
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+    </div>
 </body>
 </html>
