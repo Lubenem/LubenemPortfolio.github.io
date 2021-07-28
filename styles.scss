@@ -1,3 +1,6 @@
+$color1: rgb(44, 62, 83);
+$color2: rgb(224, 221, 208);
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +24,7 @@ p {
 
 .nav_bar {
   position: fixed;
+  z-index: 1000;
   padding: 30px 100px;
   background-color: #24252a;
   width: 100%;
@@ -46,46 +50,83 @@ p {
   }
 }
 
-#head1 {
-  height: 600px;
-  padding-top: 100px;
-  background-color: yellow;
+#header {
+  padding: 100px;
+  padding-top: 130px;
+  background-color: $color1;
+  font-size: 60px;
+
+  .job {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 
   img {
-    width: 20%;
+    display: block;
+    width: 300px;
     border-radius: 50%;
-    margin-left: 40%;
+    margin: 0 auto;
   }
 }
 
 #projects {
-  height: 750px;
-  padding-top: 50px;
-  background-color: green;
+  padding: 100px;
+  background-color: $color2;
+
+  .title {
+    color: $color1;
+  }
 
   .project_items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
 
-    p {
-      flex: 1;
-      text-align: center;
-      color: #010708;
-      font-size: 20px;
-      padding: 20px 80px;
+    .project {
+      margin: 10px;
+
+      position: relative;
 
       img {
-        width: 200px;
-        border-radius: 10%;
+        border-radius: 5%;
+        display: block;
+        margin: 0 auto;
       }
+
+      .overlay {
+        position: absolute;
+        border-radius: 5%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.3s;
+        background-color: rgb(2, 12, 34);
+      }
+
+      p {
+        color: #93d6e2;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+      }
+    }
+
+    .project:hover .overlay {
+      opacity: 0.7;
     }
   }
 }
 
 #about {
-  height: 750px;
-  padding-top: 50px;
-  background-color: purple;
+  padding: 100px;
+  background-color: $color1;
 
   .aboutText {
     margin-left: 20%;
