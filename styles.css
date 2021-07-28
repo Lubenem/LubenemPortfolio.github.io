@@ -1,3 +1,10 @@
+@media screen and (max-width: 800px) {
+  #about .about_text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -137,19 +144,29 @@ p {
   background-color: #2c3e53;
 }
 
-#about .aboutText {
-  margin-left: 20%;
+#about .about_text {
+  margin-top: 30px;
+  padding: 0 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#about .aboutText p {
-  width: 100%;
-  font-size: 30px;
+#about .about_text .about_block {
+  padding: 0 10px;
+}
+
+#about .about_text .about_block p {
+  font-size: 20px;
   color: #010708;
   text-align: left;
 }
 
-#about .aboutText p span {
-  font-size: 32px;
+#about .about_text .about_block p span {
+  font-size: 22px;
   color: #ccecf1;
 }
 

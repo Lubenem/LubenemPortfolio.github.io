@@ -1,3 +1,9 @@
+@media screen and (max-width: 800px) {
+  #about .about_text {
+    flex-wrap: wrap;
+  }
+}
+
 $color1: rgb(44, 62, 83);
 $color2: rgb(224, 221, 208);
 
@@ -128,19 +134,25 @@ p {
   padding: 100px;
   background-color: $color1;
 
-  .aboutText {
-    margin-left: 20%;
+  .about_text {
+    margin-top: 30px;
+    padding: 0 110px;
+    display: flex;
+    justify-content: center;
 
-    p {
-      width: 100%;
-      font-size: 30px;
-      color: #010708;
-      text-align: left;
-    }
+    .about_block {
+      padding: 0 10px;
 
-    p span {
-      font-size: 32px;
-      color: #ccecf1;
+      p {
+        font-size: 20px;
+        color: #010708;
+        text-align: left;
+
+        span {
+          font-size: 22px;
+          color: #ccecf1;
+        }
+      }
     }
   }
 }
