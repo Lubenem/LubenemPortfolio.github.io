@@ -1,11 +1,87 @@
+$nav_bar_color: #24252a;
+$color1: rgb(44, 62, 83);
+$color2: rgb(224, 221, 208);
+$menu_color: #f44336;
+
 @media screen and (max-width: 800px) {
   #about .about_text {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 800px) {
+  #nav_bar {
+    position: fixed;
+    z-index: 1000;
+    padding: 30px 100px 30px 100px;
+    background-color: $nav_bar_color;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-$color1: rgb(44, 62, 83);
-$color2: rgb(224, 221, 208);
+    ul {
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      text-align: left;
+      padding: 0 100px;
+      left: 0;
+      background-color: $nav_bar_color;
+      width: 100%;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 300ms ease-in-out;
+
+      li {
+        margin-bottom: 30px;
+        opacity: 0;
+        transition: opacity 100ms ease-in-out;
+      }
+    }
+
+    a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #edf0f1;
+      text-decoration: none;
+      padding: 0px 20px;
+      transition: color 0.3s ease 0s;
+    }
+
+    a:hover {
+      color: #0088a9;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+    .nav-toggle:checked ~ ul {
+      transform: scale(1, 1);
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label {
+      background-color: $menu_color;
+    }
+
+    .nav-toggle:checked ~ ul li {
+      opacity: 1;
+      transition: opacity 150ms ease-in-out 250ms;
+    }
+
+    .nav-toggle-label {
+      padding: 10px 15px;
+      border-radius: 10%;
+    }
+
+    .portfolio {
+      padding-right: auto;
+    }
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -28,15 +104,39 @@ p {
   text-align: center;
 }
 
-.nav_bar {
+#nav_bar {
   position: fixed;
   z-index: 1000;
-  padding: 30px 100px;
-  background-color: #24252a;
+  padding: 30px 100px 30px 100px;
+  background-color: $nav_bar_color;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
   font-size: 20px;
+  font-weight: 500;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    padding: 0 100px;
+    left: 0;
+    background-color: $nav_bar_color;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
+
+    li {
+      margin-bottom: 30px;
+      opacity: 0;
+      transition: opacity 100ms ease-in-out;
+    }
+  }
 
   a {
     font-family: "Montserrat", sans-serif;
@@ -51,8 +151,29 @@ p {
     color: #0088a9;
   }
 
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle:checked ~ ul {
+    transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label {
+    background-color: $menu_color;
+  }
+
+  .nav-toggle:checked ~ ul li {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out 250ms;
+  }
+
+  .nav-toggle-label {
+    padding: 10px 15px;
+    border-radius: 10%;
+  }
+
   .portfolio {
-    margin-right: auto;
+    padding-right: auto;
   }
 }
 
@@ -157,38 +278,50 @@ p {
   }
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+#contact {
+  background-color: $color2;
+  padding: 100px;
 
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .title {
+    color: $color1;
+  }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
+  form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+    .submit:hover {
+      background-color: #f44336;
+      cursor: pointer;
+    }
+
+    .form-control {
+      display: flex;
+      width: 600px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+      color: $color1;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    input {
+      height: 45px;
+    }
+  }
+
+  form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+  }
 }

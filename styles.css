@@ -5,6 +5,87 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  #nav_bar {
+    position: fixed;
+    z-index: 1000;
+    padding: 30px 100px 30px 100px;
+    background-color: #24252a;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nav_bar ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    padding: 0 100px;
+    left: 0;
+    background-color: #24252a;
+    width: 100%;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  }
+  #nav_bar ul li {
+    margin-bottom: 30px;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+  }
+  #nav_bar a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 0px 20px;
+    -webkit-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+  #nav_bar a:hover {
+    color: #0088a9;
+  }
+  #nav_bar .nav-toggle {
+    display: none;
+  }
+  #nav_bar .nav-toggle:checked ~ ul {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  #nav_bar .nav-toggle:checked ~ .nav-toggle-label {
+    background-color: #f44336;
+  }
+  #nav_bar .nav-toggle:checked ~ ul li {
+    opacity: 1;
+    -webkit-transition: opacity 150ms ease-in-out 250ms;
+    transition: opacity 150ms ease-in-out 250ms;
+  }
+  #nav_bar .nav-toggle-label {
+    padding: 10px 15px;
+    border-radius: 10%;
+  }
+  #nav_bar .portfolio {
+    padding-right: auto;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,22 +108,54 @@ p {
   text-align: center;
 }
 
-.nav_bar {
+#nav_bar {
   position: fixed;
   z-index: 1000;
-  padding: 30px 100px;
+  padding: 30px 100px 30px 100px;
   background-color: #24252a;
   width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav_bar a {
+#nav_bar ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  text-align: left;
+  padding: 0 100px;
+  left: 0;
+  background-color: #24252a;
+  width: 100%;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+#nav_bar ul li {
+  margin-bottom: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+
+#nav_bar a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #edf0f1;
@@ -52,12 +165,36 @@ p {
   transition: color 0.3s ease 0s;
 }
 
-.nav_bar a:hover {
+#nav_bar a:hover {
   color: #0088a9;
 }
 
-.nav_bar .portfolio {
-  margin-right: auto;
+#nav_bar .nav-toggle {
+  display: none;
+}
+
+#nav_bar .nav-toggle:checked ~ ul {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#nav_bar .nav-toggle:checked ~ .nav-toggle-label {
+  background-color: #f44336;
+}
+
+#nav_bar .nav-toggle:checked ~ ul li {
+  opacity: 1;
+  -webkit-transition: opacity 150ms ease-in-out 250ms;
+  transition: opacity 150ms ease-in-out 250ms;
+}
+
+#nav_bar .nav-toggle-label {
+  padding: 10px 15px;
+  border-radius: 10%;
+}
+
+#nav_bar .portfolio {
+  padding-right: auto;
 }
 
 #header {
@@ -170,48 +307,58 @@ p {
   color: #ccecf1;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+#contact {
+  background-color: #e0ddd0;
+  padding: 100px;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+#contact .title {
+  color: #2c3e53;
+}
+
+#contact form {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact form .submit:hover {
+  background-color: #f44336;
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #45a049;
+#contact form .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #2c3e53;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+#contact form input {
+  height: 45px;
+}
+
+#contact form .submit {
+  background: #ff5722;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

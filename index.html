@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="nav_bar">
+    <div id="nav_bar">
       <a class="portfolio" href="#header">Portfolio</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>Menu</span>
+      </label>
     </div>
 
     <header id="header">
@@ -116,40 +122,41 @@
 
     <div id="contact">
       <p class="title">Contact</p>
-      <div class="container">
-        <form action="action_page.php">
-          <label for="fname">First Name</label>
+        <form action="">
           <input
+            name="name"
             type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
+            class="form-control"
+            placeholder="Your Name"
+            required
           />
-
-          <label for="lname">Last Name</label>
+          <br />
           <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="Your Email"
+            required
           />
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-
-          <label for="subject">Subject</label>
+          <br />
+          <input name="tel" 
+            type="tel" 
+            class="form-control"
+            placeholder="Your Number"
+            required>
+          <br />
           <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style="height: 200px"
+            name="message"
+            class="form-control"
+            placeholder="Your Message"
+            rows="4"
           ></textarea>
-
-          <input type="submit" value="Submit" />
+          <br />
+          <input
+            type="submit"
+            class="form-control submit"
+            value="SEND MESSAGE"
+          />
         </form>
       </div>
     </div>
