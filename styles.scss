@@ -3,7 +3,7 @@ $color1: rgb(44, 62, 83);
 $color2: rgb(224, 221, 208);
 $menu_color: #f44336;
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   #header {
     padding: 150px 30px;
 
@@ -32,9 +32,10 @@ $menu_color: #f44336;
     padding: 100px 30px;
   }
 }
+
 @media screen and (min-width: 800px) {
   #nav_bar {
-    padding: 30px 20px 30px 100px;
+    padding: 30px 100px 30px 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
