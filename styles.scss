@@ -4,81 +4,58 @@ $color2: rgb(224, 221, 208);
 $menu_color: #f44336;
 
 @media screen and (max-width: 800px) {
-  #about .about_text {
-    flex-wrap: wrap;
+  #header {
+    padding: 150px 30px;
+
+    .avatar {
+      width: 150px;
+    }
+  }
+
+  #projects {
+    padding: 100px 30px;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  #about {
+    padding: 100px 30px;
+
+    .about_text {
+      flex-wrap: wrap;
+    }
+  }
+
+  #contact {
+    padding: 100px 30px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   #nav_bar {
-    position: fixed;
-    z-index: 1000;
-    padding: 30px 100px 30px 100px;
-    background-color: $nav_bar_color;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    color: #edf0f1;
-    font-family: "Montserrat", sans-serif;
+    padding: 30px 20px 30px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
 
-    ul {
-      list-style: none;
-      position: absolute;
-      top: 100%;
-      text-align: left;
-      padding: 0 100px;
-      left: 0;
-      background-color: $nav_bar_color;
-      width: 100%;
-      transform: scale(1, 0);
-      transform-origin: top;
-      transition: transform 300ms ease-in-out;
+    #list {
+      padding: 0;
+      width: auto;
+      position: static;
+      display: flex;
+      flex-wrap: nowrap;
+      transform: scale(1, 1);
 
       li {
-        margin-bottom: 30px;
-        opacity: 0;
-        transition: opacity 100ms ease-in-out;
+        opacity: 1;
+        margin: 0;
       }
     }
 
-    a {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      color: #edf0f1;
-      text-decoration: none;
-      padding: 0px 20px;
-      transition: color 0.3s ease 0s;
-    }
-
-    a:hover {
-      color: #0088a9;
-    }
-
-    .nav-toggle {
-      display: none;
-    }
-    .nav-toggle:checked ~ ul {
-      transform: scale(1, 1);
-    }
-
-    .nav-toggle:checked ~ .nav-toggle-label {
-      background-color: $menu_color;
-    }
-
-    .nav-toggle:checked ~ ul li {
-      opacity: 1;
-      transition: opacity 150ms ease-in-out 250ms;
-    }
-
     .nav-toggle-label {
-      padding: 10px 15px;
-      border-radius: 10%;
-    }
-
-    .portfolio {
-      padding-right: auto;
+      display: none;
     }
   }
 }
@@ -107,7 +84,7 @@ p {
 #nav_bar {
   position: fixed;
   z-index: 1000;
-  padding: 30px 100px 30px 100px;
+  padding: 30px 30px 30px 30px;
   background-color: $nav_bar_color;
   width: 100%;
   font-size: 20px;
@@ -123,7 +100,7 @@ p {
     position: absolute;
     top: 100%;
     text-align: left;
-    padding: 0 100px;
+    padding: 0 30px;
     left: 0;
     background-color: $nav_bar_color;
     width: 100%;
@@ -177,7 +154,7 @@ p {
   }
 }
 
-#header {
+.header {
   padding: 100px;
   padding-top: 130px;
   background-color: $color1;
@@ -196,7 +173,7 @@ p {
   }
 }
 
-#projects {
+.projects {
   padding: 100px;
   background-color: $color2;
 
@@ -251,13 +228,13 @@ p {
   }
 }
 
-#about {
+.about {
   padding: 100px;
   background-color: $color1;
 
   .about_text {
     margin-top: 30px;
-    padding: 0 110px;
+    padding: 0 120px;
     display: flex;
     justify-content: center;
 
@@ -278,7 +255,7 @@ p {
   }
 }
 
-#contact {
+.contact {
   background-color: $color2;
   padding: 100px;
 
