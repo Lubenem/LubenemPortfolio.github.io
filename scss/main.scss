@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(8, 11, 24);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  width: 100%;
+  font-size: 50px;
+  color: #edf0f1;
+  text-align: center;
+}
+
+#nav-bar {
+  position: fixed;
+  z-index: 1000;
+  padding: 30px 30px 30px 30px;
+  background-color: $nav-bar-color;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    padding: 0 30px;
+    left: 0;
+    background-color: $nav-bar-color;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
+
+    li {
+      margin-bottom: 30px;
+      opacity: 0;
+      transition: opacity 100ms ease-in-out;
+    }
+  }
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 0px 20px;
+    transition: color 0.3s ease 0s;
+  }
+
+  a:hover {
+    color: #0088a9;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle:checked ~ ul {
+    transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ .nav-toggle-label {
+    background-color: $menu-color;
+  }
+
+  .nav-toggle:checked ~ ul li {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out 250ms;
+  }
+
+  .nav-toggle-label {
+    padding: 10px 15px;
+    border-radius: 10%;
+  }
+
+  .portfolio {
+    padding-right: auto;
+  }
+}
+
+.header {
+  padding: 100px;
+  padding-top: 130px;
+  background-color: $color-1;
+  font-size: 60px;
+
+  .job {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  img {
+    display: block;
+    width: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+
+.projects {
+  padding: 100px;
+  background-color: $color-2;
+
+  .title {
+    color: $color-1;
+  }
+
+  .project-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+    .project {
+      margin: 10px;
+
+      position: relative;
+
+      img {
+        border-radius: 5%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .overlay {
+        position: absolute;
+        border-radius: 5%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.3s;
+        background-color: rgb(2, 12, 34);
+      }
+
+      p {
+        color: #93d6e2;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+      }
+    }
+
+    .project:hover .overlay {
+      opacity: 0.7;
+    }
+  }
+}
+
+.about {
+  padding: 100px;
+  background-color: $color-1;
+
+  .about-text {
+    margin-top: 30px;
+    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+
+    .about-block {
+      padding: 0 10px;
+
+      p {
+        font-size: 20px;
+        color: #010708;
+        text-align: left;
+
+        span {
+          font-size: 22px;
+          color: #ccecf1;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: $color-2;
+  padding: 100px;
+
+  .title {
+    color: $color-1;
+  }
+
+  form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .submit:hover {
+      background-color: #f44336;
+      cursor: pointer;
+    }
+
+    .form-control {
+      display: flex;
+      width: 600px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+      color: $color-1;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    input {
+      height: 45px;
+    }
+  }
+
+  form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+  }
+}

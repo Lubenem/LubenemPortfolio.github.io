@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+  #header {
+    padding: 150px 30px;
+
+    .avatar {
+      width: 150px;
+    }
+  }
+
+  #projects {
+    padding: 100px 30px;
+
+    img {
+      width: 290px;
+    }
+  }
+
+  #about {
+    padding: 100px 30px;
+
+    .about-text {
+      flex-wrap: wrap;
+    }
+  }
+
+  #contact {
+    padding: 100px 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #nav-bar {
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+
+    #list {
+      padding: 0;
+      width: auto;
+      position: static;
+      display: flex;
+      flex-wrap: nowrap;
+      transform: scale(1, 1);
+
+      li {
+        opacity: 1;
+        margin: 0;
+      }
+    }
+
+    .nav-toggle-label {
+      display: none;
+    }
+  }
+}
