@@ -195,14 +195,15 @@ p {
 }
 
 .about .about-text {
-  margin-top: 30px;
-  padding: 0 120px;
+  margin: 30px auto;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 500px;
 }
 
 .about .about-text .about-block {
@@ -276,7 +277,7 @@ p {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   #header {
     padding: 150px 30px;
   }
@@ -285,6 +286,7 @@ p {
   }
   #about {
     padding: 100px 30px;
+    width: auto;
   }
   #about .about-text {
     -ms-flex-wrap: wrap;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   #header {
     padding: 150px 30px;
 
@@ -9,7 +9,7 @@
 
   #about {
     padding: 100px 30px;
-
+    width: auto;
     .about-text {
       flex-wrap: wrap;
     }
