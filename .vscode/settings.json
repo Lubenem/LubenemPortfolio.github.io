@@ -1,4 +1,3 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "liveSassCompile.settings.includeItems": ["styles/syles.scss"]
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

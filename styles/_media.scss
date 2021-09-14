@@ -3,7 +3,7 @@
     padding: 150px 30px;
 
     .avatar {
-      width: 150px;
+      width: 50%;
     }
   }
 
@@ -17,6 +17,14 @@
 
   #contact {
     padding: 100px 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #about {
+    .about-text {
+      width: auto;
+    }
   }
 }
 
@@ -65,4 +73,17 @@
       width: 1200px;
     }
   }
+
+  #contact {
+    form {
+      width: 986px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  // #nav-bar {
+  //   margin: auto;
+  //   width: 1166px;
+  // }
 }
