@@ -20,21 +20,26 @@
   }
 }
 
-@media screen and (max-width: 360px) {
-  #about {
-    .about-text {
-      width: auto;
-    }
-  }
-}
-
 @media screen and (max-width: 472px) {
   #projects {
     img {
       width: 90%;
     }
     .overlay {
+      margin-left: 5%;
       width: 90%;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #about {
+    .about-text {
+      width: auto;
     }
   }
 }
@@ -68,6 +73,14 @@
   }
 }
 
+@media screen and (min-width: 1175px) {
+  #nav-bar {
+    #list {
+      margin-left: 750px;
+    }
+  }
+}
+
 @media screen and (min-width: 1334px) {
   #projects {
     .project-items {
@@ -78,14 +91,6 @@
   #contact {
     form {
       width: 986px;
-    }
-  }
-}
-
-@media screen and (min-width: 1175px) {
-  #nav-bar {
-    #list {
-      margin-left: 750px;
     }
   }
 }
