@@ -43,11 +43,12 @@
   #nav-bar {
     padding: 30px 100px 30px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     align-content: center;
 
     #list {
+      margin-left: 360px;
       padding: 0;
       width: auto;
       position: static;
@@ -81,9 +82,10 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
-  // #nav-bar {
-  //   margin: auto;
-  //   width: 1166px;
-  // }
+@media screen and (min-width: 1175px) {
+  #nav-bar {
+    #list {
+      margin-left: 750px;
+    }
+  }
 }

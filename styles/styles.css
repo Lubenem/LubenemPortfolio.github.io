@@ -206,10 +206,11 @@ p {
   #nav-bar {
     padding: 30px 100px 30px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     align-content: center; }
     #nav-bar #list {
+      margin-left: 360px;
       padding: 0;
       width: auto;
       position: static;
@@ -227,3 +228,7 @@ p {
     width: 1200px; }
   #contact form {
     width: 986px; } }
+
+@media screen and (min-width: 1175px) {
+  #nav-bar #list {
+    margin-left: 750px; } }
