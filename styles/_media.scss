@@ -1,17 +1,18 @@
+@media screen and (max-width: 853px) {
+  #about {
+    .about-text {
+      flex-wrap: wrap;
+      width: 70%;
+    }
+  }
+}
+
 @media screen and (max-width: 660px) {
   #header {
     padding: 150px 30px;
 
     .avatar {
       width: 50%;
-    }
-  }
-
-  #about {
-    padding: 100px 30px;
-    width: auto;
-    .about-text {
-      flex-wrap: wrap;
     }
   }
 
@@ -34,12 +35,16 @@
       font-size: 20px;
     }
   }
-}
 
-@media screen and (max-width: 360px) {
   #about {
     .about-text {
-      width: auto;
+      width: 254px;
+      p {
+        font-size: 15px;
+        span {
+          font-size: 17px;
+        }
+      }
     }
   }
 }
