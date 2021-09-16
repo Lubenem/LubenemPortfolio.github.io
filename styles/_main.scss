@@ -92,6 +92,24 @@ p {
   }
 }
 
+.star-icon {
+  margin: 0 auto;
+  padding-right: 225px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+
+  .fa-grip-lines {
+    transform: scale(8, 1);
+  }
+  .fa-star {
+    padding: 0 80px;
+  }
+}
+
 .header {
   padding: 100px;
   padding-top: 130px;
@@ -123,12 +141,17 @@ p {
     color: $color-1;
   }
 
+  .star-icon {
+    color: $color-1;
+  }
+
   .project-items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     // border: 1px solid black;
     margin: auto;
+    margin-top: 20px;
 
     .project {
       margin: 10px;
@@ -206,11 +229,15 @@ p {
 
   .title {
     color: $color-1;
-    margin-bottom: 50px;
+  }
+
+  .star-icon {
+    color: $color-1;
   }
 
   form {
     margin: auto;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -248,5 +275,30 @@ p {
     height: 50px;
     margin-top: 20px;
     justify-content: center;
+  }
+}
+
+.footer {
+  background-color: $color-1;
+  padding: 20px 0;
+  p {
+    font-size: 20px;
+  }
+
+  .web-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin: auto;
+    margin-top: 20px;
+
+    i {
+      font-size: 25px;
+      color: white;
+    }
+
+    i:hover {
+      color: black;
+    }
   }
 }
