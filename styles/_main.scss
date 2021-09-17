@@ -257,6 +257,11 @@ p {
       color: $color-1;
       font-size: 18px;
       margin-bottom: 16px;
+      transition: ease-in-out 0.1s;
+    }
+
+    .form-control:focus {
+      font-size: 16px;
     }
 
     input {

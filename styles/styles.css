@@ -184,7 +184,10 @@ p {
       border-bottom: 1px solid gray;
       color: #2c3e53;
       font-size: 18px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      transition: ease-in-out 0.1s; }
+    .contact form .form-control:focus {
+      font-size: 16px; }
     .contact form input {
       height: 45px; }
   .contact form .submit {
