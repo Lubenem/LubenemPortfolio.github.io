@@ -33,7 +33,7 @@ p {
   justify-content: space-between;
   align-items: center;
 
-  ul {
+  .navbar-list {
     list-style: none;
     position: absolute;
     top: 100%;
@@ -46,7 +46,7 @@ p {
     transform-origin: top;
     transition: transform 300ms ease-in-out;
 
-    li {
+    .menu-item {
       margin-bottom: 30px;
       opacity: 0;
       transition: opacity 100ms ease-in-out;
@@ -121,15 +121,11 @@ p {
     font-size: 20px;
   }
 
-  img {
+  .avatar {
     display: block;
     width: 300px;
     border-radius: 50%;
     margin: 0 auto;
-  }
-
-  .avatart {
-    width: 300px;
   }
 }
 
@@ -156,12 +152,11 @@ p {
       margin: 10px;
       position: relative;
 
-      img {
+      .prject-img {
         border-radius: 5%;
         display: block;
         margin: 0 auto;
         width: 365px;
-        // width: 200px;
       }
 
       .overlay {
@@ -178,7 +173,7 @@ p {
         background-color: rgb(2, 12, 34);
       }
 
-      p {
+      .project-text {
         color: #93d6e2;
         font-size: 30px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
