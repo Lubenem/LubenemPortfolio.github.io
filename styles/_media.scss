@@ -63,6 +63,23 @@
       }
     }
   }
+
+  #footer {
+    padding: 15px 0;
+
+    p {
+      font-size: 15px;
+    }
+
+    .web-icons {
+      width: 160px;
+      margin-top: 15px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 800px) {

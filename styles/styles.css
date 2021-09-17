@@ -250,7 +250,16 @@ p {
     #about .about-text p {
       font-size: 15px; }
       #about .about-text p span {
-        font-size: 17px; } }
+        font-size: 17px; }
+  #footer {
+    padding: 15px 0; }
+    #footer p {
+      font-size: 15px; }
+    #footer .web-icons {
+      width: 160px;
+      margin-top: 15px; }
+      #footer .web-icons i {
+        font-size: 20px; } }
 
 @media screen and (min-width: 800px) {
   #nav-bar {
