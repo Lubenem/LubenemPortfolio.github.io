@@ -15,10 +15,16 @@
     <div id="nav-bar">
       <a class="portfolio" href="#header">Portfolio</a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <ul id="list">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul id="list" class="list">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
       <label for="nav-toggle" class="nav-toggle-label">
         <span>Menu</span>
@@ -116,11 +122,26 @@
       </div>
       <div class="about-text">
         <div class="about-block">
-          <p><span>Github:</span> https://github.com/Lubenem</p>
-          <p><span>Age:</span> 22 years old</p>
-          <p><span>City:</span> Kamianets-Podilskyi (Ukraine)</p>
-          <p><span>Phone:</span> 067 266-63-63</p>
-          <p><span>Email:</span> lubenemkrkm@gmail.com</p>
+          <p>
+            <span>Github:</span>
+            https://github.com/Lubenem
+          </p>
+          <p>
+            <span>Age:</span>
+            22 years old
+          </p>
+          <p>
+            <span>City:</span>
+            Kamianets-Podilskyi (Ukraine)
+          </p>
+          <p>
+            <span>Phone:</span>
+            067 266-63-63
+          </p>
+          <p>
+            <span>Email:</span>
+            lubenemkrkm@gmail.com
+          </p>
         </div>
         <div class="about-block">
           <p>
@@ -154,7 +175,6 @@
           placeholder="Your Name"
           required
         />
-        <br />
         <input
           name="email"
           type="email"
@@ -162,7 +182,6 @@
           placeholder="Your Email"
           required
         />
-        <br />
         <input
           name="tel"
           type="tel"
@@ -170,14 +189,12 @@
           placeholder="Your Number"
           required
         />
-        <br />
         <textarea
           name="message"
           class="form-control"
           placeholder="Your Message"
           rows="4"
         ></textarea>
-        <br />
         <input type="submit" class="form-control submit" value="SEND MESSAGE" />
       </form>
     </div>

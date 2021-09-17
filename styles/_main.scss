@@ -113,7 +113,7 @@ p {
 .header {
   padding: 100px;
   padding-top: 130px;
-  background-color: $color-1;
+  background-color: $primary-color;
   font-size: 60px;
 
   .job {
@@ -135,21 +135,20 @@ p {
 
 .projects {
   padding: 100px 10px;
-  background-color: $color-2;
+  background-color: $secondary-color;
 
   .title {
-    color: $color-1;
+    color: $primary-color;
   }
 
   .star-icon {
-    color: $color-1;
+    color: $primary-color;
   }
 
   .project-items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // border: 1px solid black;
     margin: auto;
     margin-top: 20px;
 
@@ -197,7 +196,7 @@ p {
 
 .about {
   padding: 100px 0px;
-  background-color: $color-1;
+  background-color: $primary-color;
 
   .about-text {
     // border: solid;
@@ -224,15 +223,15 @@ p {
 }
 
 .contact {
-  background-color: $color-2;
+  background-color: $secondary-color;
   padding: 100px;
 
   .title {
-    color: $color-1;
+    color: $primary-color;
   }
 
   .star-icon {
-    color: $color-1;
+    color: $primary-color;
   }
 
   form {
@@ -254,7 +253,7 @@ p {
       border: none;
       outline: none;
       border-bottom: 1px solid gray;
-      color: $color-1;
+      color: $primary-color;
       font-size: 18px;
       margin-bottom: 16px;
       transition: ease-in-out 0.1s;
@@ -284,7 +283,7 @@ p {
 }
 
 .footer {
-  background-color: $color-1;
+  background-color: $primary-color;
   padding: 20px 0;
   p {
     font-size: 20px;
