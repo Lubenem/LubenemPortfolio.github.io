@@ -9,13 +9,13 @@ html {
 }
 
 body {
-  background-color: rgb(8, 11, 24);
+  background-color: $body-color;
 }
 
 p {
   width: 100%;
-  font-size: 50px;
-  color: #edf0f1;
+  font-size: $default-font-size;
+  color: $default-font-color;
   text-align: center;
 }
 
@@ -194,7 +194,6 @@ p {
   background-color: $primary-color;
 
   .about-text {
-    // border: solid;
     margin: 30px auto;
     display: flex;
     justify-content: left;
@@ -252,6 +251,7 @@ p {
       font-size: 18px;
       margin-bottom: 16px;
       transition: ease-in-out 0.1s;
+      resize: none;
     }
 
     .form-control:focus {

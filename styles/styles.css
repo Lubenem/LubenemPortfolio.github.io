@@ -183,7 +183,8 @@ p {
       color: #2c3e53;
       font-size: 18px;
       margin-bottom: 16px;
-      transition: ease-in-out 0.1s; }
+      transition: ease-in-out 0.1s;
+      resize: none; }
     .contact form .form-control:focus {
       font-size: 16px; }
     .contact form input {
