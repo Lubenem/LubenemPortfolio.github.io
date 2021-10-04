@@ -53,7 +53,7 @@ p {
     }
   }
 
-  a {
+  .menu-link {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
@@ -62,7 +62,7 @@ p {
     transition: color 0.3s ease 0s;
   }
 
-  a:hover {
+  .menu-link:hover {
     color: #0088a9;
   }
 
@@ -202,7 +202,7 @@ p {
     .about-block {
       padding: 0 10px;
 
-      p {
+      .about-paragraph {
         font-size: 20px;
         color: #010708;
         text-align: left;
@@ -228,7 +228,7 @@ p {
     color: $primary-color;
   }
 
-  form {
+  .form {
     margin: auto;
     margin-top: 50px;
     display: flex;
@@ -258,12 +258,12 @@ p {
       font-size: 16px;
     }
 
-    input {
+    .input {
       height: 45px;
     }
   }
 
-  form .submit {
+  .form .submit {
     background: $menu-color;
     border-color: transparent;
     color: #fff;
@@ -280,7 +280,8 @@ p {
 .footer {
   background-color: $primary-color;
   padding: 20px 0;
-  p {
+
+  .title {
     font-size: 20px;
   }
 
@@ -291,12 +292,12 @@ p {
     margin: auto;
     margin-top: 20px;
 
-    i {
+    .fab {
       font-size: 25px;
       color: white;
     }
 
-    i:hover {
+    .fab:hover {
       color: black;
     }
   }

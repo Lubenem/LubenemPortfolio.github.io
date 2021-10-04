@@ -55,7 +55,7 @@
   #about {
     .about-text {
       width: 254px;
-      p {
+      .about-paragraph {
         font-size: 15px;
         span {
           font-size: 17px;
@@ -67,7 +67,7 @@
   #footer {
     padding: 15px 0;
 
-    p {
+    .title {
       font-size: 15px;
     }
 
@@ -75,7 +75,7 @@
       width: 160px;
       margin-top: 15px;
 
-      i {
+      .fab {
         font-size: 20px;
       }
     }
@@ -127,7 +127,7 @@
   }
 
   #contact {
-    form {
+    .form {
       width: 986px;
     }
   }
