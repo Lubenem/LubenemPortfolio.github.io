@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 660px) {
-  #header {
+  .avatar-container {
     padding: 150px 30px;
 
     .avatar {
@@ -35,7 +35,7 @@
     }
   }
 
-  #projects {
+  #projects-section {
     .project-items {
       .project-text {
         font-size: 20px;
@@ -84,9 +84,9 @@
 
 @media screen and (min-width: 800px) {
   #nav-bar {
-    padding: 30px 100px 30px 100px;
+    padding: 30px 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
     align-content: center;
 
@@ -120,7 +120,7 @@
 }
 
 @media screen and (min-width: 1334px) {
-  #projects {
+  #projects-section {
     .project-items {
       width: 1200px;
     }

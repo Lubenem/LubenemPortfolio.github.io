@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: $body-color;
-}
-
 p {
   width: 100%;
   font-size: $default-font-size;
@@ -60,6 +52,7 @@ p {
     text-decoration: none;
     padding: 0px 20px;
     transition: color 0.3s ease 0s;
+    cursor: pointer;
   }
 
   .menu-link:hover {
@@ -110,26 +103,58 @@ p {
   }
 }
 
-.header {
-  padding: 100px;
-  padding-top: 130px;
+.about-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   background-color: $primary-color;
-  font-size: 60px;
 
-  .job {
-    margin-top: 20px;
-    font-size: 20px;
+  .avatar-container {
+    padding: 100px;
+    padding-top: 130px;
+    font-size: 60px;
+
+    .job {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .avatar {
+      display: block;
+      width: 300px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
   }
 
-  .avatar {
-    display: block;
-    width: 300px;
-    border-radius: 50%;
-    margin: 0 auto;
+  .about {
+    padding: 100px 0px;
+
+    .about-text {
+      margin: 30px auto;
+      display: flex;
+      justify-content: left;
+      width: 600px;
+
+      .about-block {
+        padding: 0 10px;
+
+        .about-paragraph {
+          font-size: 20px;
+          color: #010708;
+          text-align: left;
+
+          span {
+            font-size: 22px;
+            color: #ccecf1;
+          }
+        }
+      }
+    }
   }
 }
 
-.projects {
+.projects-section {
   padding: 100px 10px;
   background-color: $secondary-color;
 
@@ -189,96 +214,8 @@ p {
   }
 }
 
-.about {
-  padding: 100px 0px;
-  background-color: $primary-color;
-
-  .about-text {
-    margin: 30px auto;
-    display: flex;
-    justify-content: left;
-    width: 600px;
-
-    .about-block {
-      padding: 0 10px;
-
-      .about-paragraph {
-        font-size: 20px;
-        color: #010708;
-        text-align: left;
-
-        span {
-          font-size: 22px;
-          color: #ccecf1;
-        }
-      }
-    }
-  }
-}
-
-.contact {
-  background-color: $secondary-color;
-  padding: 100px;
-
-  .title {
-    color: $primary-color;
-  }
-
-  .star-icon {
-    color: $primary-color;
-  }
-
-  .form {
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    .submit:hover {
-      background-color: #f44336;
-      cursor: pointer;
-    }
-
-    .form-control {
-      display: flex;
-      width: 600px;
-      background: transparent;
-      border: none;
-      outline: none;
-      border-bottom: 1px solid gray;
-      color: $primary-color;
-      font-size: 18px;
-      margin-bottom: 16px;
-      transition: ease-in-out 0.1s;
-      resize: none;
-    }
-
-    .form-control:focus {
-      font-size: 16px;
-    }
-
-    .input {
-      height: 45px;
-    }
-  }
-
-  .form .submit {
-    background: $menu-color;
-    border-color: transparent;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-    justify-content: center;
-  }
-}
-
 .footer {
-  background-color: $primary-color;
+  background-color: $nav-bar-color;
   padding: 20px 0;
 
   .title {

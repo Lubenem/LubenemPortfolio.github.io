@@ -1,15 +1,12 @@
 <div id="nav-bar">
-  <a class="menu-link portfolio" href="#header">Portfolio</a>
+  <a class="menu-link portfolio" (click)="scrollTo('header')">Portfolio</a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle" />
   <ul id="navbar-list" class="navbar-list">
     <li class="menu-item">
-      <a class="menu-link" href="#projects">Projects</a>
+      <a class="menu-link" (click)="scrollTo('projects-setcion')">Projects</a>
     </li>
     <li class="menu-item">
-      <a class="menu-link" href="#about">About</a>
-    </li>
-    <li class="menu-item">
-      <a class="menu-link" href="#contact">Contact</a>
+      <a class="menu-link" (click)="scrollTo('about-setcion')">About</a>
     </li>
   </ul>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -17,18 +14,67 @@
   </label>
 </div>
 
-<header id="header" class="header">
-  <img class="avatar" src="assets/images/avatar.png" alt="avatar" />
-  <p>Liubomyr Chahoub</p>
-  <div class="star-icon">
-    <i class="fas fa-grip-lines"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-grip-lines"></i>
+<div id="about-section" class="about-section">
+  <div id="avatar-container" class="avatar-container">
+    <img class="avatar" src="assets/images/avatar.png" alt="avatar" />
+    <p>Liubomyr Chahoub</p>
+    <div class="star-icon">
+      <i class="fas fa-grip-lines"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-grip-lines"></i>
+    </div>
+    <p class="job">.Net developer / Game developer</p>
   </div>
-  <p class="job">.Net developer / Game developer</p>
-</header>
 
-<div id="projects" class="projects">
+  <div id="about" class="about">
+    <p class="title">About</p>
+    <div class="star-icon">
+      <i class="fas fa-grip-lines"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-grip-lines"></i>
+    </div>
+    <div class="about-text">
+      <div class="about-block">
+        <p class="about-paragraph">
+          <span>Github:</span>
+          https://github.com/Lubenem
+        </p>
+        <p class="about-paragraph">
+          <span>Age:</span>
+          22 years old
+        </p>
+        <p class="about-paragraph">
+          <span>City:</span>
+          Kamianets-Podilskyi (Ukraine)
+        </p>
+        <p class="about-paragraph">
+          <span>Phone:</span>
+          067 266-63-63
+        </p>
+        <p class="about-paragraph">
+          <span>Email:</span>
+          lubenemkrkm@gmail.com
+        </p>
+      </div>
+      <div class="about-block">
+        <p class="about-paragraph">
+          <span>Experience:</span> Unity / c # developer from 09.2020 to 03.2021
+          (6 months) Redpix, Ivano-Frankivsk (Game development)
+        </p>
+        <p class="about-paragraph">
+          <span>Language knowledge:</span> Ukrainian ─ fluent, English ─
+          intermediate
+        </p>
+        <p class="about-paragraph">
+          <span>Additional Information:</span>
+          https://www.linkedin.com/in/liubomyr-chahoub-769000209/
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="projects-section" class="projects-section">
   <p class="title">Projects</p>
   <div class="star-icon">
     <i class="fas fa-grip-lines"></i>
@@ -123,96 +169,6 @@
   </div>
 </div>
 
-<div id="about" class="about">
-  <p class="title">About</p>
-  <div class="star-icon">
-    <i class="fas fa-grip-lines"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-grip-lines"></i>
-  </div>
-  <div class="about-text">
-    <div class="about-block">
-      <p class="about-paragraph">
-        <span>Github:</span>
-        https://github.com/Lubenem
-      </p>
-      <p class="about-paragraph">
-        <span>Age:</span>
-        22 years old
-      </p>
-      <p class="about-paragraph">
-        <span>City:</span>
-        Kamianets-Podilskyi (Ukraine)
-      </p>
-      <p class="about-paragraph">
-        <span>Phone:</span>
-        067 266-63-63
-      </p>
-      <p class="about-paragraph">
-        <span>Email:</span>
-        lubenemkrkm@gmail.com
-      </p>
-    </div>
-    <div class="about-block">
-      <p class="about-paragraph">
-        <span>Experience:</span> Unity / c # developer from 09.2020 to 03.2021
-        (6 months) Redpix, Ivano-Frankivsk (Game development)
-      </p>
-      <p class="about-paragraph">
-        <span>Language knowledge:</span> Ukrainian ─ fluent, English ─
-        intermediate
-      </p>
-      <p class="about-paragraph">
-        <span>Additional Information:</span>
-        https://www.linkedin.com/in/liubomyr-chahoub-769000209/
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="contact" class="contact">
-  <p class="title">Contact</p>
-  <div class="star-icon">
-    <i class="fas fa-grip-lines"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-grip-lines"></i>
-  </div>
-  <form class="form">
-    <input
-      name="name"
-      type="text"
-      class="form-control input"
-      placeholder="Your Name"
-      required
-    />
-    <input
-      name="email"
-      type="email"
-      class="form-control input"
-      placeholder="Your Email"
-      required
-    />
-    <input
-      name="tel"
-      type="tel"
-      class="form-control input"
-      placeholder="Your Number"
-      required
-    />
-    <textarea
-      name="message"
-      class="form-control"
-      placeholder="Your Message"
-      rows="4"
-    ></textarea>
-    <input
-      type="submit"
-      class="form-control input submit"
-      value="SEND MESSAGE"
-    />
-  </form>
-</div>
-
 <footer id="footer" class="footer">
   <p class="title">AROUND THE WEB</p>
   <div class="web-icons">
@@ -226,10 +182,6 @@
       class="web-link"
     >
       <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://twitter.com/LubenemKARA" target="_blank" class="web-link">
-      <i class="fab fa-twitter"></i>
     </a>
 
     <a href="https://www.twitch.tv/lubenem" target="_blank" class="web-link">
